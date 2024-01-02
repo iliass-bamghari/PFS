@@ -20,7 +20,7 @@ const db = mysql.createConnection({
 });
 
 app.get("/", (req, res) => {
-  res.json("hello");
+  res.json("hello from backend");
 });
 
 app.get("/books", (req, res) => {
@@ -77,6 +77,6 @@ app.put("/books/:id", (req, res) => {
   });
 });
 
-app.listen(80, () => {
+app.listen(8080, () => {
   console.log("Connected to backend.");
 });
